@@ -37,3 +37,9 @@ declare module "*.svg" {
   const src: string;
   export default src;
 }
+
+declare module "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js" {
+  import { LifeCycles } from "single-spa";
+  const lifeCyclesModule: LifeCycles;
+  export = lifeCyclesModule;
+}
